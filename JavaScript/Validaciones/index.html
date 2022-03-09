@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones con JS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,900;1,300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div class="container">
+        <div class="titulo">
+            <h2>Validaciones en JS</h2>
+        </div>
+        <div class="foto">
+            <img src="img/foto.svg" alt="Computación e Informática">
+        </div>
+        <div class="grupo-form">
+            <form class="formulario" action="" name="frmDetalle">
+                <input class="ingreso form-control" type="text" name="txtNombre" id="nombre" placeholder="Nombre">
+                <input class="ingreso form-control" type="text" name="txtEdad" id="edad" placeholder="Edad">
+                <select class="ingreso form-control" name="aficiones">
+                    <option value="seleccione">--Seleccione--</option>
+                    <option value="Deporte">Deporte</option>
+                    <option value="Música">Música</option>
+                    <option value="Arte">Arte</option>
+                    <option value="Teatro">Teatro</option>
+                    <option value="Lectura">Lectura</option>
+                    <option value="Videojuegos">Videojuegos</option>
+                    <option value="Programacion">Programacion</option>
+                </select>
+                <input class="btn btn-primary" type="button" value="Validar" onclick="validar()">
+                <label for="">Resultados</label>
+                <input class="respuestas form-control" type="text" name="" id="rNombre" readonly>
+                <input class="respuestas form-control" type="text" name="" id="rEdad" readonly>
+                <input class="respuestas form-control" type="text" name="" id="rAficion" readonly>
+                
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/validar.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
